@@ -1,0 +1,8 @@
+/* Here is your custom css styles. */
+/* Here is your custom css styles. */
+body {
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  user-select: none; /*选中文字时避免出现蓝色背景*/
+}

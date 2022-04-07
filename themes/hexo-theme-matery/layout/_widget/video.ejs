@@ -1,0 +1,38 @@
+<link href="https://cdn.bootcdn.net/ajax/libs/dplayer/1.9.1/DPlayer.min.css" rel="stylesheet">
+<div class="video-player">
+    <% if (theme.video.showTitle) { %>
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;<%= theme.video.title %>
+    </div>
+    <% } %>
+    <div class="row">
+		<% if (theme.video.url) { %>
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    <% if (theme.video.height) { %> style="height: <%- theme.video.height %>px;"<% } %>></div>
+        </div>
+		<% }else{ %>
+			<iframe src='<% if (theme.video.iframeUrl) { %><%- url_for(theme.video.iframeUrl) %><% } %>' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle" <% if (theme.video.height) { %> style="height: <%- theme.video.height %>px;"<% } %> width="100%"> </iframe>
+		<% } %>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.26.0/DPlayer.min.js" integrity="sha512-1t2U1/0xGhBZAriD+/9llOhjPs5nFBDZ7KbnHB4SGwAUPrzyS+02Kus1cz0exk5eMyXxwfHxj/1JLuie/p6xXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: '<%- theme.video.autoplay %>' === 'true',
+            theme: '<%- theme.video.theme %>',
+            loop: '<%- theme.video.loop %>' === 'true',
+            lang: '<%- config.language %>' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: '<%- theme.video.preload %>',
+            volume: Number('<%- theme.video.volume %>'),
+            video: {
+                url: '<% if (theme.video.url) { %><%- url_for(theme.video.url) %><% } %>',
+                pic: '<% if (theme.video.pic) { %><%- url_for(theme.video.pic) %><% } %>',
+                thumbnails: '<% if (theme.video.thumbnails) { %><%- url_for(theme.video.thumbnails) %><% } %>'
+            }
+        });
+    });
+</script>
