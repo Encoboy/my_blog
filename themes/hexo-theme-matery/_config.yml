@@ -121,7 +121,7 @@ myMusic:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: true
+  enable: false
   showTitle: true
   title: Show Time
   url: "http://119.29.79.173/medias/33.mp4"
