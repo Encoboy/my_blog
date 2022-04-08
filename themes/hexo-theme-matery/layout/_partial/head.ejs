@@ -84,4 +84,15 @@
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.mycss) %>">
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.dark) %>">
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.jquery) %>"></script>
+    <style>
+        body {
+            cursor: url("<%- theme.jsDelivr.url %><%- url_for(theme.cursor.cursor1) %>"), default;
+        }
+        a:hover{
+            cursor:url("<%- theme.jsDelivr.url %><%- url_for(theme.cursor.cursor2) %>"), pointer;
+        }
+        i{
+            cursor:url("<%- theme.jsDelivr.url %><%- url_for(theme.cursor.cursor2) %>"), pointer;
+        }
+     </style>
 </head>

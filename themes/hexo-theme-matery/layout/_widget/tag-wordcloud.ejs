@@ -16,7 +16,6 @@
     $.getScript("<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.jqcloud) %>",function () {
         <%
         let tagWordArr = [];
-        console.log('site',site)
         site.tags.map(function(tag) {
             tagWordArr.push({'text': tag.name, 'weight': tag.length, 'link': decodeURI(url_for(tag.path))});
             //  tagWordArr.push({'text': tag.name, 'weight': tag.length, shape :"rectangular" });

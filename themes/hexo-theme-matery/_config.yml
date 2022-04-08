@@ -83,6 +83,11 @@ cover:
 # pjax
 pjax: true
 
+# 鼠标
+cursor:
+  cursor1: /medias/cursor_1.png
+  cursor2: /medias/cursor_2.png
+
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
