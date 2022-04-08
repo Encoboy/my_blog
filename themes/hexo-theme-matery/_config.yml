@@ -16,9 +16,9 @@ menu:
   About:
     url: /about
     icon: fas fa-user-circle
-  Contact:
-    url: /contact
-    icon: fas fa-comments
+  # Contact:
+  #   url: /contact
+  #   icon: fas fa-comments
   # Friends:
   #   url: /friends
   #   icon: fas fa-address-book
@@ -49,7 +49,7 @@ menu:
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
-  url: http://119.29.79.173/
+  url: #http://119.29.79.173/
 
 # Website start time.
 # 站点运行开始时间.
@@ -110,13 +110,17 @@ music:
   preload: "auto" # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: true # 列表默认折叠
-  hideLrc: false # 隐藏歌词
+  hideLrc: true # 隐藏歌词
 
 myMusic:
   enable: true
   server: netease
   type: playlist
   id: 3036801375
+  order: random # list 循环 random 随机
+  lrcType: 0 #歌词模式（0、不显示 1、HTML模式 2、js模式 3、lrc文件模式）
+  theme: "#42b983"
+  autoplay: false # 自动播放
 
 # Whether to display the videos.
 # 是否在首页显示视频.

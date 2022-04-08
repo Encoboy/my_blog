@@ -1,19 +1,17 @@
 <link rel="stylesheet" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.aplayer) %>">
+
 <div id="my-aplayer"
  class="aplayer" 
  data-id='<%- theme.myMusic.id %>'
  data-server='<%- theme.myMusic.server %>'
  data-type='<%- theme.myMusic.type %>'
+ data-autoplay='<%- theme.myMusic.autoplay %>'
+ data-order='<%- theme.myMusic.order %>'
+ data-theme='<%- theme.myMusic.theme %>'
+ data-lrcType='<%- theme.myMusic.lrcType %>'
  data-fixed="true" 
- data-autoplay="false" 
- data-order="list" 
  data-volume="0.55" 
- data-theme="#cc543a" 
  data-preload="auto" 
- data-lrcType=0
 ></div>
-
-
-
 <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.aplayer) %>"></script>
 <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.meting) %>"></script>
