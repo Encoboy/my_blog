@@ -121,7 +121,7 @@ myMusic:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: false
+  enable: true
   showTitle: true
   title: Show Time
   url: "http://119.29.79.173/medias/33.mp4"
@@ -519,6 +519,7 @@ libs:
     codelang: /libs/codeBlock/codeLang.js
     codecopy: /libs/codeBlock/codeCopy.js
     codeshrink: /libs/codeBlock/codeShrink.js
+    pjax: /libs/pjax/pjax.min.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.

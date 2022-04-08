@@ -39,7 +39,6 @@ function flyFont(textArr, colorArr, fontSize, duration, flyHeight) {
       left: event.pageX + "px",
       top: event.pageY + "px",
     });
-    console.log(textArr[0]);
     oSpan.text(textArr[0]);
     setTimeout(() => {
       textArr.push(textArr.shift());

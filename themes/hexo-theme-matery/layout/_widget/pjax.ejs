@@ -1,6 +1,6 @@
 <%if(theme.pjax){%>
 <script type="text/javascript">
-    $.getScript("https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js",loadPjax)
+    $.getScript("<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.pjax) %>",loadPjax)
     function loadPjax(){
         var pjax = new Pjax({
             selectors: [

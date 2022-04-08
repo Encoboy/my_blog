@@ -15,9 +15,9 @@
 			<iframe src='<% if (theme.video.iframeUrl) { %><%- url_for(theme.video.iframeUrl) %><% } %>' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle" <% if (theme.video.height) { %> style="height: <%- theme.video.height %>px;"<% } %> width="100%"> </iframe>
 		<% } %>
     </div>
-</div>
+</div> 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.26.0/DPlayer.min.js" integrity="sha512-1t2U1/0xGhBZAriD+/9llOhjPs5nFBDZ7KbnHB4SGwAUPrzyS+02Kus1cz0exk5eMyXxwfHxj/1JLuie/p6xXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.dplayer) %>" ></script>
 <script>
     $(function () {
         new DPlayer({
