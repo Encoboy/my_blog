@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-
+<link rel="stylesheet" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.aplayer) %>">
 <div id="my-aplayer"
  class="aplayer" 
  data-id='<%- theme.myMusic.id %>'
@@ -14,5 +13,7 @@
  data-lrcType=0
 ></div>
 
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+
+
+<script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.aplayer) %>"></script>
+<script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.meting) %>"></script>
