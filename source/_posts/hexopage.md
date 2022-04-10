@@ -36,6 +36,6 @@ categories: Hexo
 
 服务器的 nginx 配置：
 
-![nginx_setting](http://119.29.79.173/medias/images/nginx_setting.png)
+![nginx配置](http://119.29.79.173/medias/images/nginx_setting.png)
 
 这样我的博客也就全部搭建完成了，主题日后再慢慢进行修改。
