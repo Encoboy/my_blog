@@ -34,4 +34,8 @@ categories: Hexo
 然后在腾讯云(<https://cloud.tencent.com>)上买了个一年期限的域名 5 元和服务器 45 元。
 部署参考的是(<https://www.bilibili.com/read/cv7005164>)，但是我的没有直接成功，因为我买的服务器是 centerOS 的，所以和参考文章有些不一样，然后在小伙伴的帮助下解决了，主要是服务器上的 nginx.conf 配置错了，导致访问不到页面。
 
+服务器的 nginx 配置：
+
+![nginx_setting](http://119.29.79.173/medias/images/nginx_setting.png)
+
 这样我的博客也就全部搭建完成了，主题日后再慢慢进行修改。
