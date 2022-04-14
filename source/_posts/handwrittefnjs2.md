@@ -1,7 +1,7 @@
 ---
 title: 常见手写js函数(二)
 date: 2022-04-12 15:18:28
-tags: JavaScript
+tags: javascript
 categories: 前端
 ---
 
