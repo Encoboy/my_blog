@@ -39,3 +39,8 @@ categories: Hexo
 ![nginx配置](http://119.29.79.173/medias/images/nginx_setting.png)
 
 这样我的博客也就全部搭建完成了，主题日后再慢慢进行修改。
+
+### 域名备案成功后更新
+
+1. 在申请域名的网站，域名列表处将域名解析
+2. 在服务器的 nginx 上将 nginx.conf 文件中的 server_name 的 localhost 改成自己的公网 IP
